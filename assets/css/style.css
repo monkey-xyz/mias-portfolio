@@ -1,22 +1,61 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3vh;
-    color: #A0ACBD;
 }
 
 /*Main*/
+html, body {
+    height: 100%;
+}
+
 body {
-    background-color: #00253D;
+    background-color: white;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 20px 0 0;
+    color: black;
+    line-height: 1.5;
+}
+
+a {
+    color: #BDA5AD;
+}
+
+a:active {
+    color: #A0ACBD;
+}
+
+a:visited {
+    color: #A0ACBD;
 }
 
 main {
     margin: 10px auto;
-    width: 80%;
+    width: 70%;
 }
 
-main > * {
-    margin: 15px auto;
+section {
+    position: relative;
+    margin: 0 0 30px 0
 }
+
+section::before {
+    content: attr(data-descr);
+    padding: 15px;
+    background: #3A1726;
+    border-left: #6A4453 solid 2px;
+    border-top: #6A4453 solid 2px;
+    color: aliceblue;
+    position: absolute;
+    z-index: 3;
+}
+
+footer {
+    padding: 15px;
+}
+
 /*Header*/
 #decor {
     background-image: url("../images/2d0c8413.png");
@@ -32,14 +71,14 @@ header {
     box-shadow: 5px 0px 0 #6A4453;
 }
 
-header, nav {
+header, nav, footer {
     background-color: #3A1726;
+    color: #A0ACBD;
 }
 
 /*Navigation*/
 nav { 
     z-index: 2;
-    box-shadow: 0px 5px 0 #6A4453;
     padding: 5px;
 }
 ul {
@@ -51,34 +90,84 @@ li {
 }
 
 /*Section One*/
+#one {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
 
+#one img {
+    border-radius: 10% 10%;
+    margin: 0 auto;
+    height: 300px;
+    width: auto;
+    display: inline;
+}
 /*Section Two*/
 #two {
+    width: 100%;
     display: flex;
+    height: 500px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 #two :first-child {
-    width: 100%;
-    height: 600px;
+    align-self: flex-start;
+    flex: 5 100%;
 }
 
 .entry {
     border: #3A1726 solid 2px;
     width: 50%;
     height: 300px;
+    margin: 0 auto;
+    position: relative;
+    background: #00AFB0;
 }
+
+.entry::after {
+    content: attr(data-descr);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    background: #3A1726;
+    border-right: #6A4453 solid 2px;
+    border-bottom: #6A4453 solid 2px;
+    color: aliceblue;
+}
+
 .entry img {
-    margin: 0;
-    
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.entry img:hover {
+    opacity: 40%;
+    transition: ease-in .3s opacity;
 }
 
 /*Section Three*/
+#three {
+    width: 100%;
+    height: 50%;
+    color: black;
+}
 
 
 @media screen and (max-width: 768px) {
     header {
         width: 100%;
         box-shadow: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #two .entry {
+        flex-direction: column;
+        width: 100%;
     }
 }
