@@ -4,6 +4,10 @@ Our first experience for the second week coding a site from scratch, in particul
 
 ## About
 
+![portfolio screenshot](./assets/images/sitess.jpg)
+
+[My Portfolio](https://pldbrja.github.io/mias-portfolio/)
+
 Making this portfolio was much harder when trying to keep it to the general modern idea of what a portfolio would look like. It was a struggle, as I wanted to keep an aspect of it unique but without having it be too much of an annoyance to look at and browse through for grading. 
 
 As a result of this, I had initially had a Y2K-esque one where I did not attempt to bend too many visual features. After getting around halfway through, I chose to drop it in order to pursue something that was a bit more put together. 
