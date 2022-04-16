@@ -182,7 +182,7 @@ li {
 
 .entry img:hover {
     opacity: 50%;
-    transition: all.4s ease-in;
+    transition: all .4s ease-in;
     transform: scale(1.2);
 }
 
@@ -285,7 +285,7 @@ li {
     }
     .entry img:hover {
         opacity: 50%;
-        transition: all.4s ease-in;
+        transition: all .4s ease-in;
         transform: scale(2);
     }
 }
