@@ -1,22 +1,23 @@
 # My Portfolio
 
-Our first experience for the second week coding a site from scratch, in particular this time being a portfolio that we can show our works through.
+Our first experience for the second week coding a site from scratch, in particular this time being a portfolio that we can show our works through. This site was developed with the intent to be able to showcase a variety of projects we've worked on throughout the year and provide a description of the user.
 
 ## About the Project
 
 [My Portfolio](https://pldbrja.github.io/mias-portfolio/)
 
-Making this portfolio was much harder when trying to keep it to the general modern idea of what a portfolio would look like. It had to be able to host the personal information of the user, and include a few select works that could be updated easily or added to in the future.
+This portfolio is a static page, section navigation is handled through a list with links rather than with button press. The navigation is located to the top right on a desktop screen beside the name, which shifts to below the first heading on mobile / smaller screens. An image is placed underneath the header to separate the main content of the portfolio.
 
-As a result of this, I had initially had a Y2K-ish one where I did not attempt to bend too many visual features. After getting around halfway through, I chose to drop it in order to pursue something that was a bit more put together.
+All special effects applied on hover were handled through CSS transitions by use of the :hover selector on specific elements, rather than just applying them to every single piece of the page.
 
-Linear and easy to follow, but with an assortment of hover effects to enhance the feel of the page.
+UPDATE (4/15/22) - The placeholder projects have been replaced by images and links to homework / projects from class. Although stock images are no longer used, the credits at the bottom of the README will be kept in.
 
 ## Screenshots
 
 ![portfolio screenshot](./assets/images/sitess.jpg)
 
 ## Credits
+
 * [Placeholder Image](https://freesvg.org/graphic-placeholder)
 * [Hands Typing Stock Image](https://www.freeimageslive.co.uk/free_stock_image/twohandtypingjpg)
 * [Calculator Stock Image](https://www.stockvault.net/photo/194065/accounts)
